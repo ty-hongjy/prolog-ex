@@ -1,7 +1,7 @@
 valid([]).
 valid([Head|Tail]) :-
    fd_all_different(Head),
-      valid(Tail).
+   valid(Tail).
 
 sudoku(Puzzle, Solution) :-
 	Solution = Puzzle,
@@ -38,6 +38,10 @@ sudoku(Puzzle, Solution) :-
 	Col1, Col2, Col3, Col4, Col5, Col6,
 	Square1, Square2, Square3, Square4, Square5, Square6]).
 
-%write('\n'), write(Row1),
-%write('\n'), write(Row2),
-%write('\n'), write(Row4),
+write('\n'), write(Row1),
+write('\n'), write(Row2),
+write('\n'), write(Row3),
+write('\n'), write(Row4),
+write('\n'), write(Row5),
+write('\n'), write(Row6).
+
