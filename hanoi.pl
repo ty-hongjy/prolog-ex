@@ -1,7 +1,7 @@
 hanoi(N) :- move(N,left,middle,right).
 
 move(1,A,_,C) :- inform(A,C), !.
-move(N,A,B,C) :- N1 is N - 1,
+move(N,A,B,C) :- N>1,N1 is N - 1,
 	write(N),
 	move(N1,A,C,B),
 	write(N1),
